@@ -19,3 +19,9 @@ body {
 .carousel-inner img {
     margin: auto;
   }
+
+@media(max-width: 768px) {
+    .mb-resp{
+        font-size: 20px;
+    }
+}
