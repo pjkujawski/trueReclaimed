@@ -14,14 +14,6 @@ body {
 .carousel-inner img {
   margin: auto; }
 
-.button-display-none {
-  padding: 0;
-  border: 0 none; }
-
-.modal.body {
-  margin: auto;
-  max-width: 100%; }
-
 .gallery-block.grid-gallery {
   padding-bottom: 60px;
   padding-top: 60px; }
