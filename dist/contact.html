@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>True Reclaimed</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav id="main-nav" class="navbar navbar-expand-lg navbar-light fixed-top py-2">
+    <div class="container">
+        <a href="index.html" class="navbar-brand mx-auto">
+            <img src="img/Logo_v6_400px.jpg" class="img-fluid">
+        </a>
+        <button class="navbar-toggler btn-block" data-toggle="collapse" data-target="#navbarCollapse">Menu
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item align-self-center">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a href="inventory.html" class="nav-link">Inventory</a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Contact Us Form -->
+  <section id="contact" class="bg-dark py-5">
+    <div class="primary-overlay text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center align-self-center">
+            <div class="d-flex flex-column row-hl">
+              <div class="p4 item-hl">
+                <h1 class="display-3">
+                  Send Us A Message 
+                </h1>
+                <p class="lead py-3"> We look forward to hearing from you.
+                </p>
+              </div>
+              <div class="p4 item-hl mb-5">
+                <img src="img/true_reclaimed_owners.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 align-self-center">
+              <form name="contact" method="POST" netlify-honeypot="bot-field" action="/success.html" netlify>
+                <p class="hidden">
+                  <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number (optional)</label>
+                    <input type="tel" name="phoneNumber" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" class="form-control form-control-lg" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="sumbit" class="btn btn-secondary">Submit</button>
+                </div>
+              </form>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    <!-- Location -->
+    <section id="services-section" class="bg-light text-dark py-5">
+        <div class="container">
+          <h1 class="text-center display-4 mb-4">Come Say Hi</h1>
+          <div class="row">
+              <div class="col-sm-6 text-center mb-4">
+                  <h2>Hours</h2>
+                  <p class="lead">Monday - Friday<br>9:00am - 5:00pm </p>
+                  <p class="lead">Saturday<br>9:00am - 2:00pm</p>
+              </div>
+              <div class="col-sm-6 text-center mb-4">
+
+                <h2>Location</h2>
+                <p class="lead">8980 W 1st St<br>Wellington, Colorado 80549<br>970.698.2055</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container text-center align-self-center">
+          <div id="map" class="py-4 mx-auto embed-map embed-map-1by1">              
+            <iframe class="embed-map-item" width="700" height="600" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-0iFX9_NbocRR1RpJo7fq18&key=AIzaSyDpzy0XEK4P4nr_etHVJCPg95RXKpWXHSg" allowfullscreen></iframe>
+          </div>
+        </div>
+        </div>
+    </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-4 text-secondary text-center">
+            <h3>True Reclaimed Lumber Supply</h3>
+            <p>Copyright &copy; <span id="year"></span></p>
+
+          </div>
+          <div class="col-md-6 py-4 align-self-center text-center">
+            <p class="text-secondary">8980 W 1st St<br>Wellington, Colorado 80549<br>970.698.2055</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+        $('.carousel').carousel({
+      interval:3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    })
+
+    $('#slider4').on('slide.bs.carousel', function() {
+      console.log('SLIDE!');
+    })
+
+    $('#slider4').on('slid.bs.carousel', function() {
+      console.log('SLID!');
+    })
+
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+
+  </script>
+</body>
+
+</html>
