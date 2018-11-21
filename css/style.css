@@ -89,5 +89,12 @@ body {
   #showcase h1 {
     font-size: 2rem; }
 
+  #services-section h1 {
+    font-size: 3rem; }
+  #services-section h2 {
+    font-size: 1.6rem; }
+  #services-section p {
+    font-size: 1.1rem; }
+
   body {
     margin-top: 133px; } }
