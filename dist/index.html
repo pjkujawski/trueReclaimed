@@ -8,8 +8,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-131122203-2');
+    gtag('config', 'AW-774467674');
+  </script>
+  <!-- Event snippet for Website View conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-774467674/hMFVCIWHg5cBENrgpfEC', 'event_callback': callback }); return false; }
   </script>
 
   <meta charset="UTF-8">
@@ -46,7 +49,7 @@
                     <a href="products.html" class="nav-link">Products</a>
                 </li>
                 <li class="nav-item align-self-center">
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a onclick="return gtag_report_conversion('contact.html');"  href="contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -194,6 +197,10 @@
 
           </div>
           <div class="col-md-6 py-4 align-self-center text-center">
+            <div>
+              <a class="px-2" href="https://www.facebook.com/truereclaimed"><i class="fab fa-facebook fa-2x"></i></a>
+              <a class="px-2" href="https://www.instagram.com/truereclaimed/"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
             <p class="text-secondary">8980 W 1st St<br>Wellington, Colorado 80549<br>970.698.2055</p>
           </div>
         </div>
